@@ -12,9 +12,15 @@ void my_putchar(char c)
     );
 }
 
+void my_putstr(char *str)
+{
+    for (int i = 0; str[i] != '\0'; i++)
+    {
+        my_putchar(str[i]);
+    }
+}
+
 void main()
 {
-    my_putchar('H');
-    my_putchar('i');
-    my_putchar('!');
+    my_putstr("Hello world\n");
 }
